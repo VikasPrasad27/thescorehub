@@ -1,0 +1,67 @@
+.about{
+    background-color: #333;
+    height: fit-content;
+    width: 100vw;
+}
+.about h1{
+    color:aqua;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    font-size:50px;
+}
+.about h2{
+    color: #ddd;
+    text-align: center;
+    font-size: 30px;
+    max-width: 70vw;
+    flex-wrap: wrap;
+    margin-left: 15%;
+    margin-top: 20px;
+}
+strong{
+    color: aqua;
+}
+.contact-info-upper-container {
+    display: flex;
+    justify-content: center;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    background: (250, 250, 250);
+    margin: 2rem auto;
+    padding: 0.5rem;
+    color:aqua;
+  }
+  
+  .contact-info-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1rem;
+  }
+  
+  .contact-info-container p {
+    font-size: larger;
+  }
+  
+  .contact-icon {
+    cursor: default;
+  }
+  
+  .email-icon {
+    height: 2.5rem;
+  }
+  .linkedin-icon {
+    height: 2.5rem;
+  }
+  #contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+  }
+#contact h1{
+    padding-top: 70px;
+}

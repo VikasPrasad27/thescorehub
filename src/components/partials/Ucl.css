@@ -1,0 +1,13 @@
+.body-container{
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: scroll;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.itemDiv{
+    width: 23vw;
+    padding: 10px;
+}
