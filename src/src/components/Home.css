@@ -1,0 +1,156 @@
+/* General Styles */
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden; /* Prevent horizontal overflow */
+  overflow-y: auto; /* Allow vertical scrolling */
+  background-color: #222; /* Dark background color */
+  color: white;
+  font-family: Arial, sans-serif; /* Clean, readable font */
+  padding: 20px; 
+  background: linear-gradient(
+        rgba(0, 0, 0, 0.4), 
+        rgba(0, 0, 0, 0.4)
+      ), url(../components/partials/allinone.jpg);
+  background-size: cover;
+  background-position: center; /* Center the background image */
+}
+
+/* Topnav Styles */
+.topnav {
+  display: flex;
+  justify-content: space-between; /* Distribute space between items */
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  background-color: #333;
+}
+
+.topnav i {
+  color: white;
+  font-size: 1.5rem; /* Adjust font size */
+}
+
+.menu-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Description Section */
+.description {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 20px;
+  padding: 0 10px;
+  font-weight: 300; /* Light font weight for better readability */
+  line-height: 1.5; /* Increase line height for better spacing */
+}
+
+/* Flex Containers for Images and Text */
+.indianleague,
+.championsleague,
+.europaleague,
+.clubmatches {
+  margin-top: 20px;
+  display: flex;
+  align-items: center; /* Align items horizontally centered */
+  text-align: left;
+  gap: 20px; /* Space between image and text */
+}
+
+.indianleague img,
+.championsleague img,
+.europaleague img,
+.clubmatches img {
+  width: 120px; /* Slightly larger size for images */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Rounded corners for images */
+}
+
+.indianleague p,
+.championsleague p,
+.europaleague p,
+.clubmatches p {
+  font-size: 1rem; /* Adjust text size */
+  margin: 0; /* Remove default margins */
+}
+
+.information {
+  justify-content: center;
+  align-items: center;
+}
+
+.maininfo {
+  padding-left: 150px;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .description {
+      font-size: 2rem;
+      margin-top: 20px; /* Larger font size on larger screens */
+  }
+  .topnav {
+      display: none; /* Hide topnav on larger screens if needed */
+  }
+  .indianleague,
+  .championsleague,
+  .europaleague,
+  .clubmatches {
+      gap: 25px; /* Larger gap on wider screens */
+  }
+
+  .indianleague img,
+  .championsleague img,
+  .europaleague img,
+  .clubmatches img {
+      width: 150px; /* Slightly larger images on larger screens */
+  }
+}
+
+/* Mobile View */
+@media (max-width: 767px) {
+  .home {
+      background: linear-gradient(
+        rgba(0, 0, 0, 0.5), 
+        rgba(0, 0, 0, 0.5)
+      ), url(../components/partials/OIP.jpg); /* Change background image with gradient overlay for mobile */
+      background-size: cover;
+      background-position: center; /* Center the background image */
+  }
+  
+  .description {
+      font-size: 1.2rem; /* Adjust font size for mobile */
+      margin-top: 10px; /* Adjust margin for mobile */
+  }
+
+  .topnav {
+      display: flex; /* Show topnav on mobile */
+  }
+
+  .indianleague,
+  .championsleague,
+  .europaleague,
+  .clubmatches {
+      flex-direction: row; /* Keep images and text side by side */
+      align-items: center; /* Align items vertically centered */
+      gap: 15px; /* Adjust gap for mobile */
+  }
+
+  .indianleague img,
+  .championsleague img,
+  .europaleague img,
+  .clubmatches img {
+      width: 100px; /* Smaller images on mobile */
+  }
+  
+  .maininfo {
+      padding-left: 0; /* Remove left padding on mobile */
+  }
+}

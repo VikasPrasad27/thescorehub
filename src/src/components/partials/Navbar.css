@@ -1,0 +1,127 @@
+/* .navbar{
+    height: screen-height;
+    width: 30vw;
+    background-color: #343a40;
+} */
+/* .title{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    padding-left:30px ;
+    margin-top: 40px;
+} */
+/* .category{
+  font-size: 24px;
+  gap: 20px;
+  font-weight: medium;
+} */
+/* #category:hover{
+    background-color: blueviolet;
+} */
+ /* Base styles */
+/* Base styles */
+.navbar-container {
+    position: relative; /* Ensures that the menu-content can be positioned absolutely */
+  }
+  
+  .topnav {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+    background-color: #333; /* Adjust as needed */
+    padding: 10px;
+    
+  }
+  
+  .menu-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    padding-left: 60px;
+
+  }
+  
+  .menu-content {
+    display: none; /* Hidden by default */
+    position: absolute;
+    top: 60px; /* Adjust according to topnav height */
+    left: 0;
+    width: 100%;
+    background-color: #333; /* Background color for the dropdown menu */
+    z-index: 1000;
+  }
+  
+  .menu-content.active {
+    display: block; /* Show when active */
+  }
+  
+  .menu-content nav {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    padding: 10px;
+  }
+  
+  .menu-content a {
+    display: block; /* Ensure each link takes a full line */
+    color: #b0b0b0; /* Default text color */
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .menu-content a:hover {
+    background-color: #6556CD; /* Highlight color */
+    color: white;
+  }
+  
+  .menu-content h1 {
+    color: white;
+    font-size: 30px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+  }
+  
+  hr {
+    border: 1px solid #444; /* Adjust border color */
+    margin: 10px 0;
+  }
+  .menu-content nav i{
+    margin-top: 0%;
+  }
+  /* Styles for larger screens */
+  @media (min-width: 786px) {
+    .topnav {
+      display: none; /* Hide topnav on larger screens */
+    }
+  
+    .menu-content {
+      display: block; /* Always display menu on larger screens */
+      position: static; /* Reset positioning */
+      width: auto;
+      background-color: transparent; /* Background color not needed */
+    }
+  
+    .menu-content nav {
+      display: flex;
+      flex-direction: row; /* Stack items horizontally */
+      padding: 0;
+    }
+  
+    .menu-content a {
+      display: inline-block; /* Inline-block for horizontal layout */
+      margin: 0 10px; /* Space between links */
+    }
+  }
+  @media (max-width:768px) {
+    nav h1 {
+      display: none;
+    }
+  }
+  
