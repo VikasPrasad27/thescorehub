@@ -1,0 +1,51 @@
+.body-container {
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: auto;
+    height: 100vh;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.itemDiv {
+    width: 23vw;
+    padding: 10px;
+}
+
+.navbar-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #2d3748;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.itemTitle h4 {
+    color: white;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.itemImage img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+    .body-container {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .itemDiv {
+        width: 45%; /* Approximately 2 items per row */
+        margin-bottom: 20px;
+    }
+}
