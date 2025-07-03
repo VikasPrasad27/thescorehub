@@ -9,7 +9,7 @@ function Clubinfo() {
   useEffect(() => {
     axios({
       method: "GET",
-      url: 'https://www.scorebat.com/video-api/v3/feed/?token=MTcwNzExXzE3MjI1MjY5NjVfYjk0MTU0Nzc2MDllYzhkYTk3MTVkYzYyZjhiNzAxNmExNGQzYjZjNA=='
+      url: 'https://www.scorebat.com/video-api/v3/feed/?token="YOUR_TOKEN"=='
     })
     .then(res => {
       const filteredData = res.data.response.filter(item => 
