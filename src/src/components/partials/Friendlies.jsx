@@ -9,7 +9,7 @@ function Friendlies() {
   useEffect(() => {
     axios({
       method: "GET",
-      url: 'https://www.scorebat.com/video-api/v3/feed/?token=MTcwNzExXzE3Mjc4NTk5MzZfYzRkOTEyMDM3NTE2MWY0MzNhNDM5ZGY0YzRmYjAzMjAyNzY3ODFiNg=='
+      url: 'https://www.scorebat.com/video-api/v3/feed/?token="YOUR_TOKEN"=='
     })
     .then(res => {
       const filteredData = res.data.response.filter(item => 
